@@ -1,9 +1,3 @@
-// JavaScript Document
-
-// Tooplate 2148 Bistro Elegance
-
-// https://www.tooplate.com/view/2148-bistro-elegance
-
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -562,3 +556,4 @@ document.addEventListener('DOMContentLoaded', () => {
       homeLink.classList.add('active');
    }
 });
+
