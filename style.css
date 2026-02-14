@@ -110,6 +110,76 @@ section {
 }
 
 
+/* ===============================
+   AGE GATE
+================================ */
+
+.age-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.age-modal {
+    background: #111;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.age-modal h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.age-modal p {
+    margin-bottom: 2rem;
+    color: #bbb;
+}
+
+.age-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.age-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.age-btn.confirm {
+    background: #e74c3c;
+    color: white;
+}
+
+.age-btn.confirm:hover {
+    background: #c0392b;
+}
+
+.age-btn.deny {
+    background: #333;
+    color: #aaa;
+}
+
+.age-btn.deny:hover {
+    background: #222;
+}
+
+
 /* =====================================================
    2. NAVIGATION
 ===================================================== */
@@ -734,6 +804,7 @@ footer {
         opacity: 1;
     }
 }
+
 
 
 
