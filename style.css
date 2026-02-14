@@ -127,31 +127,6 @@ nav {
 	z-index: 1;
 }
 
-.static-block {
-	position: absolute;
-	background: linear-gradient(45deg, #f0f0f0, #e5e5e5, #f5f5f5);
-	transform: rotate(45deg);
-	border-radius: 3px;
-	opacity: 0.6;
-}
-
-.red-block {
-	position: absolute;
-	background: #e74c3c;
-	transform: rotate(45deg);
-	border-radius: 4px;
-	opacity: 0.7;
-}
-
-.red-block-outline {
-	position: absolute;
-	background: transparent;
-	border: 2px solid #e74c3c;
-	transform: rotate(45deg);
-	border-radius: 4px;
-	opacity: 0.7;
-}
-
 .hero-content {
 	text-align: center;
 	z-index: 2;
@@ -683,6 +658,7 @@ footer {
 	}
 
 }
+
 
 
 
