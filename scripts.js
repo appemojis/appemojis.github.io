@@ -1,3 +1,26 @@
+// Age Gate
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ageGate = document.getElementById("ageGate");
+    const enterBtn = document.getElementById("enterSite");
+    const exitBtn = document.getElementById("exitSite");
+
+    // Se já confirmou idade, não mostra novamente
+    if (localStorage.getItem("ageConfirmed") === "true") {
+        ageGate.style.display = "none";
+    }
+
+    enterBtn.addEventListener("click", function () {
+        localStorage.setItem("ageConfirmed", "true");
+        ageGate.style.display = "none";
+    });
+
+    exitBtn.addEventListener("click", function () {
+        window.location.href = "https://www.google.com";
+    });
+
+});
+
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -549,4 +572,5 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
 });
+
 
