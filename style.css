@@ -334,6 +334,11 @@ h2 {
     padding: 5rem 0;
 }
 
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
 .menu-card {
     background: #1a1a1a;
     border: 1px solid rgba(255,255,255,0.08);
@@ -707,6 +712,10 @@ footer {
 
     .hero h1 { font-size: 2rem; }
 
+
+    .menu-grid { grid-template-columns: repeat(3, 1fr); }
+
+
     .reservation-form { grid-template-columns: 1fr; }
 }
 
@@ -770,5 +779,6 @@ footer {
         opacity: 1;
     }
 }
+
 
 
