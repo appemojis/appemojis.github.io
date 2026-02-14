@@ -61,12 +61,52 @@ section {
     width: 100%;
 }
 
+/* =====================================================
+   GRID SYSTEM PROFISSIONAL
+===================================================== */
+
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* COLUNAS DESKTOP */
+.col-12 { grid-column: span 12; }
+.col-10 { grid-column: span 10; }
+.col-8  { grid-column: span 8; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+.col-2  { grid-column: span 2; }
+
+/* TABLET */
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-6, .col-4, .col-3, .col-2 {
+        grid-column: span 4;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    [class^="col-"] {
+        grid-column: span 4;
+    }
 }
 
 
@@ -766,3 +806,4 @@ footer {
         opacity: 1;
     }
 }
+
