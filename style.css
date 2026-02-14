@@ -129,18 +129,18 @@ nav {
 /* Responsividade */
 @media (max-width: 768px) {
     .hero-content {
-        padding: 2.5rem 1.5rem;
-        border-radius: 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
+        padding: 2rem;
+        border-radius: 18px;
     }
 }
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+}
+
 
 .hero h1 {
 	font-size: 3.5rem;
@@ -633,6 +633,7 @@ footer {
 	}
 
 }
+
 
 
 
