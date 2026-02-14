@@ -5,17 +5,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const enterBtn = document.getElementById("enterSite");
     const exitBtn = document.getElementById("exitSite");
 
-    // Se já confirmou idade
+    function lockScroll() {
+        document.documentElement.classList.add("no-scroll");
+        document.body.classList.add("no-scroll");
+    }
+
+    function unlockScroll() {
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
+    }
+
     if (localStorage.getItem("ageConfirmed") === "true") {
         ageGate.style.display = "none";
+        unlockScroll();
     } else {
-        document.body.classList.add("no-scroll");
+        lockScroll();
     }
 
     enterBtn.addEventListener("click", function () {
         localStorage.setItem("ageConfirmed", "true");
         ageGate.style.display = "none";
-        document.body.classList.remove("no-scroll");
+        unlockScroll();
     });
 
     exitBtn.addEventListener("click", function () {
@@ -575,6 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
 });
+
 
 
 
