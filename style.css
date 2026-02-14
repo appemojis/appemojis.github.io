@@ -106,11 +106,9 @@ nav {
 }
 
 .nav-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
 }
 
 @media (max-width: 768px) {
@@ -350,14 +348,12 @@ nav {
 
 /* Section Styles */
 section {
-	padding: 5rem 2rem;
-	max-width: 1200px;
-	margin: 0 auto;
+    padding: 5rem 0;
 }
 
 @media (max-width: 768px) {
     section {
-        padding: 3rem 1rem;
+        padding: 3rem 0rem;
     }
 }
 
@@ -815,6 +811,7 @@ footer {
 	}
 
 }
+
 
 
 
