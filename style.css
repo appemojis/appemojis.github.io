@@ -80,7 +80,6 @@ nav {
 .nav-links a:hover,
 .nav-links a.active {
 	color: #e74c3c;
-	border: 2px solid #e74c3c;
 }
 
 .menu-toggle {
@@ -628,6 +627,7 @@ footer {
 	}
 
 }
+
 
 
 
