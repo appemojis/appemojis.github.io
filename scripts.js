@@ -1,9 +1,3 @@
-// JavaScript Document
-
-// Tooplate 2148 Bistro Elegance
-
-// https://www.tooplate.com/view/2148-bistro-elegance
-
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -529,16 +523,6 @@ function handleReservation(e) {
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
-   const nav = document.querySelector('nav');
-   if (window.scrollY > 100) {
-      nav.style.background = 'rgba(255, 255, 255, 0.98)';
-      nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-   } else {
-      nav.style.background = 'rgba(255, 255, 255, 0.95)';
-      nav.style.boxShadow = 'none';
-   }
-
-   // Update active nav item
    updateActiveNavItem();
 });
 
@@ -561,4 +545,5 @@ document.addEventListener('DOMContentLoaded', () => {
    if (homeLink) {
       homeLink.classList.add('active');
    }
+
 });
