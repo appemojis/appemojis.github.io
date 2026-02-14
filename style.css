@@ -296,21 +296,37 @@ h2 {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 12px;
+    gap: 18px;
+}
+
+.menu-card {
+    background: #1a1a1a; /* cinza escuro elegante */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* igual navbar */
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    transition: all 0.3s ease;
 }
 
 .menu-image {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.menu-image:hover {
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.menu-card:hover .menu-image {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 1200px) {
@@ -705,6 +721,7 @@ footer {
 	}
 
 }
+
 
 
 
