@@ -50,23 +50,61 @@ nav {
 }
 
 .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 18px;
     text-decoration: none;
     background: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 6px 16px;
     border-radius: 25px;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+	opacity: 0;
+    transform: translateY(-5px);
+    animation: fadeInButton 0.6s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInButton {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-cta:hover {
     background: #aa30f1;
     border-color: #aa30f1;
     color: #ffffff;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(170, 48, 241, 0.35);
+}
+
+.nav-cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+    transition: all 0.6s ease;
+}
+
+.nav-cta:hover::before {
+    left: 100%;
 }
 
 /* Hero Section with Diagonal Grid */
@@ -600,6 +638,7 @@ footer {
 	}
 
 }
+
 
 
 
