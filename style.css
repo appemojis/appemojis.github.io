@@ -244,18 +244,6 @@ h2 {
 	position: relative;
 }
 
-h2::after {
-	content: '';
-	position: absolute;
-	bottom: -15px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 80px;
-	height: 3px;
-	background: #e0e0e0;
-	border-radius: 2px;
-}
-
 /* Menu Section */
 .menu-grid {
 	display: grid;
@@ -638,6 +626,7 @@ footer {
 	}
 
 }
+
 
 
 
