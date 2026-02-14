@@ -48,18 +48,6 @@ nav {
 	transition: all 0.3s ease;
 }
 
-.logo:hover {
-	transform: translateY(-2px);
-}
-
-.logo svg {
-	transition: transform 0.3s ease;
-}
-
-.logo:hover svg {
-	transform: rotate(-10deg) scale(1.1);
-}
-
 .nav-links {
 	display: flex;
 	list-style: none;
@@ -627,6 +615,7 @@ footer {
 	}
 
 }
+
 
 
 
