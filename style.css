@@ -135,15 +135,6 @@ nav {
 	opacity: 0.6;
 }
 
-.static-block-outline {
-	position: absolute;
-	background: transparent;
-	border: 2px solid #e0e0e0;
-	transform: rotate(45deg);
-	border-radius: 3px;
-	opacity: 0.6;
-}
-
 .red-block {
 	position: absolute;
 	background: #e74c3c;
@@ -692,5 +683,6 @@ footer {
 	}
 
 }
+
 
 
