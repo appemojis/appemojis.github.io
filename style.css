@@ -99,21 +99,24 @@ nav {
 
 /* Hero Section with Diagonal Grid */
 .hero {
-	height: 100vh;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	background: linear-gradient(135deg, #ffe400 0%, #ff0000 100%);
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+	background: #f5f5f5;
 }
 
 .hero-content {
-	text-align: center;
-	z-index: 2;
-	max-width: 800px;
-	padding: 0 2rem;
-	margin-top: 100px;
+	background: linear-gradient(135deg, #ffe400 0%, #ff0000 100%);
+    padding: 4rem 3rem;
+    border-radius: 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    z-index: 2;
 }
 
 .hero h1 {
@@ -619,6 +622,7 @@ footer {
 	}
 
 }
+
 
 
 
