@@ -361,16 +361,6 @@ h2::after {
 	flex-direction: column;
 }
 
-
-.menu-item:hover::before {
-	left: 100%;
-}
-
-.menu-item:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
 .menu-item h3 {
 	color: #333;
 	margin-bottom: 1rem;
@@ -713,5 +703,6 @@ footer {
 	}
 
 }
+
 
 
