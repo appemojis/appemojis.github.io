@@ -10,7 +10,7 @@ body {
 	font-family: 'IBM Plex Sans', sans-serif;
 	line-height: 1.6;
 	color: #333;
-	background: #fff;
+	background: #000;
 	overflow-x: hidden;
 }
 
@@ -77,8 +77,8 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-	color: #e74c3c;
-	border: 2px solid #e74c3c;
+	color: #ef5242;
+	border: 2px solid #ef5242;
 }
 
 .menu-toggle {
@@ -703,6 +703,7 @@ footer {
 	}
 
 }
+
 
 
 
