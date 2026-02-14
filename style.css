@@ -114,12 +114,12 @@ section {
    AGE GATE
 ================================ */
 
+html.no-scroll,
 body.no-scroll {
     overflow: hidden;
-    height: 100vh;
-    touch-action: none;
     position: fixed;
     width: 100%;
+    height: 100%;
 }
 
 body.no-scroll > *:not(.age-overlay) {
@@ -817,6 +817,7 @@ footer {
         opacity: 1;
     }
 }
+
 
 
 
