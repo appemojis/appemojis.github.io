@@ -98,14 +98,24 @@ nav {
 }
 
 /* Hero Section with Diagonal Grid */
-.hero {
-    height: calc(100vh - 80px);
-    margin-top: 80px;
+.hero-content {
+    background: linear-gradient(135deg, #ffe400 0%, #ff0000 100%);
+    
+    padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);
+    border-radius: clamp(15px, 3vw, 30px);
+    width: 100%;
+    max-width: 900px;
+    max-height: 100%;
+
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-	background: #f5f5f5;
+    align-items: center;
+
+    gap: clamp(1rem, 2vh, 2.5rem);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
 }
 
 .hero-content {
@@ -626,6 +636,7 @@ footer {
 	}
 
 }
+
 
 
 
