@@ -151,30 +151,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.logo::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.25),
-        transparent
-    );
-    transition: 0.6s ease;
-}
-
-.logo:hover {
-    transform: translateY(-2px);
-}
-
-.logo:hover::after {
-    left: 100%;
-}
-
 .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -192,7 +168,6 @@ nav {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-
     opacity: 0;
     transform: translateY(-5px);
     animation: fadeInButton 0.6s ease forwards;
@@ -206,27 +181,6 @@ nav {
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(170, 48, 241, 0.35);
 }
-
-.nav-cta::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.25),
-        transparent
-    );
-    transition: all 0.6s ease;
-}
-
-.nav-cta:hover::before {
-    left: 100%;
-}
-
 
 /* =====================================================
    3. HERO SECTION
@@ -780,6 +734,7 @@ footer {
         opacity: 1;
     }
 }
+
 
 
 
