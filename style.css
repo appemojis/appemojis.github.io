@@ -49,45 +49,24 @@ nav {
     transition: all 0.3s ease;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1.6rem;
-}
-
-.nav-links a {
+.nav-cta {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.25s ease;
-}
-
-.nav-links a:hover {
+    background: transparent;
+    border: 2px solid #ffffff;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-.nav-links a.active {
+.nav-cta:hover {
+    background: #aa30f1;
+    border-color: #aa30f1;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.menu-toggle {
-	display: none;
-	flex-direction: column;
-	cursor: pointer;
-}
-
-.menu-toggle span {
-	width: 25px;
-	height: 3px;
-	background: #333;
-	margin: 3px 0;
-	transition: 0.3s;
+    transform: translateY(-1px);
 }
 
 /* Hero Section with Diagonal Grid */
@@ -621,6 +600,7 @@ footer {
 	}
 
 }
+
 
 
 
