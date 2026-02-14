@@ -1,18 +1,82 @@
 @charset "utf-8";
 
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* RESET GLOBAL MODERNO */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* AJUSTE DE VIEWPORT E RENDERIZAÇÃO */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* BODY BASE */
 body {
-	font-family: 'IBM Plex Sans', sans-serif;
-	line-height: 1.6;
-	color: #fff;
-	background: #000;
-	overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000;
+    overflow-x: hidden;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* IMAGENS RESPONSIVAS */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* LISTAS */
+ul, ol {
+    list-style: none;
+}
+
+/* BOTÕES */
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* INPUTS */
+input, textarea {
+    font-family: inherit;
+    outline: none;
+}
+
+/* EVITA QUE ELEMENTOS QUEBREM O LAYOUT */
+section {
+    width: 100%;
+}
+
+/* CONTAINER GLOBAL */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 /* Navigation */
@@ -300,24 +364,20 @@ h2 {
 
 /* Menu Section */
 #menu {
-    padding: 5rem 0; /* remove laterais */
+    padding: 5rem 0;
 }
 
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 2rem;
-    box-sizing: border-box;
 }
 
 .menu-card {
     background: #1a1a1a;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
-    padding: 14px;
+    padding: 12px;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
@@ -331,7 +391,6 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .menu-card:hover {
@@ -364,7 +423,6 @@ h2 {
 @media (max-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(3, 1fr);
-        padding: 0 1rem;
     }
 }
 
@@ -742,6 +800,7 @@ footer {
 	}
 
 }
+
 
 
 
