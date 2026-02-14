@@ -139,16 +139,6 @@ nav {
 	}
 }
 
-.static-decoration {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 400px;
-	height: 400px;
-	pointer-events: none;
-	z-index: 1;
-}
-
 .bottom-right-decoration {
 	position: absolute;
 	bottom: 80px;
@@ -724,3 +714,4 @@ footer {
 	}
 
 }
+
