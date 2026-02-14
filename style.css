@@ -673,11 +673,11 @@ footer {
 }
 
 .footer-content {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .footer-section h3 {
@@ -718,6 +718,18 @@ footer {
 
 .footer-links span {
 	color: #555;
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Mobile Responsive */
@@ -791,15 +803,12 @@ footer {
 		font-size: 2rem;
 	}
 
-	.menu-grid {
-		grid-template-columns: 1fr;
-	}
-
 	.reservation-form {
 		grid-template-columns: 1fr;
 	}
 
 }
+
 
 
 
