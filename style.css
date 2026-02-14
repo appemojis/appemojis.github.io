@@ -369,15 +369,15 @@ h2 {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
 }
 
 .menu-card {
     background: #1a1a1a;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
-    padding: 12px;
+    padding: 14px;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
@@ -408,12 +408,6 @@ h2 {
     transform: scale(1.05);
 }
 
-@media (max-width: 1400px) {
-    .menu-grid {
-        grid-template-columns: repeat(8, 1fr);
-    }
-}
-
 @media (max-width: 1200px) {
     .menu-grid {
         grid-template-columns: repeat(6, 1fr);
@@ -426,7 +420,7 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .menu-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -806,6 +800,7 @@ footer {
 	}
 
 }
+
 
 
 
