@@ -276,22 +276,6 @@ h2::after {
 	flex-direction: column;
 }
 
-.menu-item::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, transparent, rgba(231, 76, 60, 0.1), transparent);
-	transition: left 0.5s ease;
-}
-
-.menu-item:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
 .menu-item h3 {
 	color: #333;
 	margin-bottom: 1rem;
@@ -634,6 +618,7 @@ footer {
 	}
 
 }
+
 
 
 
