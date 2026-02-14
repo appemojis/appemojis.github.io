@@ -325,7 +325,7 @@ h2::after {
 }
 
 .modal-content {
-	background: white;
+	background: #1f1f20;
 	margin: 10% auto;
 	padding: 2rem;
 	border-radius: 15px;
@@ -618,6 +618,7 @@ footer {
 	}
 
 }
+
 
 
 
