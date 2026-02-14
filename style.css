@@ -23,7 +23,7 @@ nav {
 	background: black;
 	backdrop-filter: blur(10px);
 	z-index: 1000;
-	padding: 1rem 0;
+	padding: 0.4rem 0;
 	border-bottom: 3px solid #e74c3c; 
 	transition: all 0.3s ease;
 }
@@ -619,6 +619,7 @@ footer {
 	}
 
 }
+
 
 
 
