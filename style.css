@@ -299,15 +299,23 @@ h2 {
 }
 
 /* Menu Section */
+#menu {
+    padding: 5rem 0; /* remove laterais */
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .menu-card {
     background: #1a1a1a;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
     padding: 14px;
     aspect-ratio: 1 / 1;
@@ -323,12 +331,12 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .menu-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
 
 .menu-card:hover .menu-image {
@@ -356,6 +364,7 @@ h2 {
 @media (max-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(3, 1fr);
+        padding: 0 1rem;
     }
 }
 
@@ -733,6 +742,7 @@ footer {
 	}
 
 }
+
 
 
 
