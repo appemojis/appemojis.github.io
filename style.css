@@ -295,19 +295,19 @@ h2 {
 /* Menu Section */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 18px;
 }
 
 .menu-card {
-    background: #1a1a1a; /* cinza escuro elegante */
-    border: 1px solid rgba(255, 255, 255, 0.08); /* igual navbar */
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     padding: 14px;
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 1 / 1;
     transition: all 0.3s ease;
 }
 
@@ -329,21 +329,15 @@ h2 {
     transform: scale(1.05);
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1400px) {
     .menu-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(10, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -721,6 +715,7 @@ footer {
 	}
 
 }
+
 
 
 
